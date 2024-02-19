@@ -5,7 +5,6 @@ pipeline {
         stage('Build') {
             steps {
                 bat 'python --version' // Make sure Python is installed and accessible
-                bat 'python -m pip install -r requirements.txt' // Install any required dependencies
                 
             }
         }
