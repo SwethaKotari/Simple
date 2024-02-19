@@ -12,9 +12,9 @@ def calculate_rectangle_area(length, width):
     return length * width
 
 def main():
-    # Get user input for the dimensions of the rectangle
-    length = float(input("Enter the length of the rectangle: "))
-    width = float(input("Enter the width of the rectangle: "))
+    # Hardcoded values for the dimensions of the rectangle
+    length = 5.0
+    width = 3.0
 
     # Calculate the area of the rectangle
     area = calculate_rectangle_area(length, width)
@@ -24,4 +24,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
