@@ -1,29 +1,27 @@
-import subprocess
+def calculate_rectangle_area(length, width):
+    """
+    Calculate the area of a rectangle.
 
-def build():
-    print("Building the project...")
-    # Replace the command with the actual build command for your project
-    subprocess.run(["./build.bat"], check=True)
+    Args:
+    length (float): The length of the rectangle.
+    width (float): The width of the rectangle.
 
-def test():
-    print("Running tests...")
-    # Replace the command with the actual test command for your project
-    subprocess.run(["./run_tests.bat"], check=True)
-
-def deploy():
-    print("Deploying the project...")
-    # Replace the command with the actual deployment command for your project
-    subprocess.run(["./deploy.bat"], check=True)
+    Returns:
+    float: The area of the rectangle.
+    """
+    return length * width
 
 def main():
-    try:
-        build()
-        test()
-        deploy()
-        print("Workflow completed successfully!")
-    except subprocess.CalledProcessError as e:
-        print(f"Error: {e}")
-        print("Workflow failed.")
+    # Get user input for the dimensions of the rectangle
+    length = float(input("Enter the length of the rectangle: "))
+    width = float(input("Enter the width of the rectangle: "))
+
+    # Calculate the area of the rectangle
+    area = calculate_rectangle_area(length, width)
+
+    # Print the result
+    print(f"The area of the rectangle with length {length} and width {width} is: {area}")
 
 if __name__ == "__main__":
     main()
+
