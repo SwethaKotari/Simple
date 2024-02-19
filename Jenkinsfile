@@ -11,7 +11,7 @@ pipeline {
         
         stage('Test') {
             steps {
-                bat 'python deploy_script.py'
+                bat 'python example1.py'
                 
             }
         }
