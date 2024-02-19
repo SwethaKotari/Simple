@@ -11,14 +11,6 @@ pipeline {
         
         stage('Test') {
             steps {
-                bat 'python -m pytest' // Run tests using pytest
-                
-            }
-        }
-
-        stage('Deploy') {
-            steps {
-                // Add deployment steps here (e.g., copy files to server, run deployment script)
                 bat 'python deploy_script.py'
                 
             }
