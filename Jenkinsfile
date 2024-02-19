@@ -6,7 +6,7 @@ pipeline {
                 bat 'python --version'
             }
         }
-        stage('sum') {
+        stage('Bulid') {
             steps {
                 bat 'python example1.py'
             }
